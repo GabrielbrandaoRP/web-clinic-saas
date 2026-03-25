@@ -11,8 +11,8 @@ export const NavBar = () => {
   return (
     <nav className='flex justify-between py-5 px-8 fixed w-full bg-transparent backdrop-blur-md'>
         <div>
-            <h1 className='text-4xl'>
-              <span className='text-transparent bg-clip-text bg-linear-to-r from-orange-400 to-purple-600'>Your Clinic</span>
+            <h1 className='text-4xl font-bold'>
+              <span className='text-transparent bg-clip-text bg-linear-to-br from-slate-300 to-slate-500'>Your Clinic</span>
             </h1>
         </div>
         <div className='flex items-center gap-8'>
@@ -26,13 +26,13 @@ export const NavBar = () => {
         ))}
         <div className='border border-white rounded-lg'>
 
-        <span className='text-lg bg-tranparent text-white px-4 py-1 rounded-lg'>
-            <Link href="#">
+        <span className='text-lg bg-tranparent text-black px-4 py-1 rounded-lg'>
+            <Link href="/signup">
               SignUp
             </Link>
 
           </span>
-        <span className='text-lg bg-white text-black px-4 py-1 rounded-lg'>
+        <span className='text-lg bg-linear-to-br from-slate-300 to-slate-500 text-white px-4 py-1 rounded-sm'>
             <Link href="/login">
               Sign
             </Link>
