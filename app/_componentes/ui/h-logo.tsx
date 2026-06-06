@@ -11,7 +11,7 @@ export const HLogo = ({label} : HLogoProps) => {
   return (
     <>
      <h1 className={`text-4xl font-bold`}>
-        <span className='text-transparent bg-clip-text bg-linear-to-r from-orange-400 to-purple-600'>
+        <span className='text-transparent bg-clip-text bg-linear-to-br from-orange-400 to-violet-500'>
             {label}
         </span>
      </h1>

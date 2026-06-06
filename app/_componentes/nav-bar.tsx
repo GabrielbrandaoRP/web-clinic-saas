@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import { HLogo } from './ui/h-logo'
 
 const navLinks = [
   {id: 1, label: "Planos", route: "#plans"},
@@ -7,13 +8,11 @@ const navLinks = [
   {id: 3, label: "Contato", route: "#contact"},
   {id: 4, label: "Sobre nós", route: "#about"},
 ]
-export const NavBar = () => {
+export const  NavBar = () => {
   return (
     <nav className='flex justify-between py-5 px-8 fixed w-full bg-transparent backdrop-blur-md'>
         <div>
-            <h1 className='text-4xl font-bold'>
-              <span className='text-transparent bg-clip-text bg-linear-to-br from-slate-300 to-slate-500'>Your Clinic</span>
-            </h1>
+            <HLogo label='Your Clinic' />
         </div>
         <div className='flex items-center gap-8'>
         {navLinks.map((item) => (
@@ -32,7 +31,7 @@ export const NavBar = () => {
             </Link>
 
           </span>
-        <span className='text-lg bg-linear-to-br from-slate-300 to-slate-500 text-white px-4 py-1 rounded-sm'>
+        <span className='text-lg bg-linear-to-br from-orange-400 to-violet-500  text-white px-4 py-1 rounded-sm'>
             <Link href="/login">
               Sign
             </Link>
